@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>owner login</title>
+    <link rel="stylesheet" href="ownerPage.css">
+</head>
+<body>
+   <header>
+        <nav>
+             <h3>  
+               <div class="navbar-nav"> 
+                <a  class="tittle">DZHouses</a>
+                 <a class="one" href="ad.html">add an ad</a>
+                  <a class="one" href="#">help</a>
+                  <a class="one" href="#">travels</a>
+                  <a class="one" href="register.html">LOG IN<span class="user-icon"> 👤</span></a>
+               </div>
+            </h3>
+        </nav>
+    </header>
+
+
+ <!--header fad hna-->
+ <div class="display"> <!--awel div -->
+   <div class="inline2"> <!--div inline --> <!--left hna-->
+       <div class="fram"> <!--div frame lewal left-->
+          <div class="profile">profile: </div>
+         <input type="text" placeholder="Name" class="long_box">
+          <input type="text" placeholder="Family Name" class="long_box">
+         <input type="number" placeholder="phone" class="long_box" required>
+         <input type="email" placeholder="Email" class="long_box" required>
+         <input type="number" placeholder="phone" class="long_box">
+         <input type="email" placeholder="Email" class="long_box">
+         <input type="file" class="file" >
+         <input type="file" class="file" accept="image/*">
+         <br>
+         <br>
+       </div><!--9fel lewal left-->
+       <div class="fram"> <!--div fram tani left-->
+         <div class="contact">contact tantent:</div>
+
+         <div class="form" >
+             <h3>select your question</h3>
+               <select id="tenantmsg">
+                  <option value=""> </option>
+                  <option value="key">Hello, i can't find the key</option>
+                  <option value="contact">Hi, i need the tanent contact</option>
+               </select>
+               <br>
+               <button onclick="bootreply()">send</button>
+               <h3>The boot answer;</h3>
+               <div id="chatBox"  class="chatBox"></div>
+               
+              </div>
+        </div><!--9fel tani left-->
+      </div><!--li ya9fel div inline-->
+      <div class="line"></div> <!--hada li fi nes-->
+
+ <div class="framP2"> <!--div ta3 jiha lekhra-->
+      <div class="announcment">Announcements:</div>
+      <div class="display">
+        <div class="shortBLUE">#</div>
+        <div class="bigBLUE">announcment</div>
+        <div class="mediumBLUE">updates</div>
+      </div>
+      <div class="display">
+        <input type="text" class="short" value="20301" />
+        <input type="text" class="big" value="zaafrania" />
+        <div class="medium">
+          <button>✖</button>
+          <button>⚒️</button>
+        </div>
+      </div>
+
+      <div class="announcment">Booking Requests:</div>
+      <div class="display">
+        <input type="text" class="short" value="20302" />
+        <input type="text" class="big" value="Nice villa in Annaba" />
+        <div class="medium">
+          <button>✔</button>
+          <button>✖</button>
+        </div>
+      </div>
+
+      <div class="display">
+        <input type="text" class="short" value="20303" />
+        <input type="text" class="big" value="Studio in Annaba" />
+        <div class="medium">
+          <button>✔</button>
+          <button>✖</button>
+        </div>
+      </div>
+    </div><!--hna yfad div jiha lekhra-->
+</div><!--akher div-->
+
+
+
+<footer>
+    <div class="footer-sections">
+      <div class="inline">
+          <h4>About HomeAway</h4>
+       <p>Post a Listing<br>Trust & Safety<br>Partner Resources</p></div> 
+      
+      <div class="inline">
+        <h4>Company</h4>
+        <p>Who are we?<br>Contact us<br>Privacy policy</p></div>
+     
+       <div class="inline">
+        <h4>Meet our family</h4>
+       <p>Vrbo<br>Abritel.fr<br>FeWo-direkt.de</p></div>
+       
+</footer>
+<script>
+ function bootreply(){ //mechkel hna beli al send button raho fi form 3ahadika ya3meli refrech kel mara 3ahadika lazem n7et event  bah yakhdem ged gedlazem ykoun {bootrely(event)}
+ // default howa refrech li na7ki 3lih   {event.preventdefault();} hadi tkhali al page mata3melch refrech
+    const selectBox = document.getElementById("tenantmsg");
+    const selectedText = selectBox.options[selectBox.selectedIndex].text;
+    const selectedValue = selectBox.value;
+    let reply="wait please...";
+    if(selectedValue=="key"){
+        reply="use the key box";
+    }else if(selectedValue=="contact"){
+        reply=" the email : tanent.email@gmail.com  the number: 0626924471";
+    }else{
+        reply="we can't answer something u didnt ask please choose a message";
+    }
+    const chatBox= document.getElementById("chatBox");
+    chatBox.innerHTML = `You: ${selectedText}<br>Bot: ${reply}`
+ }
+</script>
+</body>
+</html>

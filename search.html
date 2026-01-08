@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZ Houses search</title>
+    <link rel="stylesheet" href="search_click.css">
+</head>
+<body>
+    <body>
+        <header>
+            <nav>
+                 <h3>  
+                   <div class="navbar-nav"> 
+                     <a  class="tittle">DZHouses</a>
+                     <a class="one" href="ad.html">add an ad</a>
+                      <a class="one" href="#">help</a>
+                      <a class="one" href="#">travels</a>
+                      <a class="one" href="register.html">LOG IN<span class="user-icon"> 👤</span></a> 
+                   </div>
+                </h3>
+            </nav>
+        </header>
+    
+       <div class="banner">
+         <img src="the houses.jpg" class="pic"> 
+           <section class="search-bar">
+              <div class="box">Location</div>
+             <div class="box">Dates</div>
+              <div class="box">People</div>
+              <button id="search-btn" >Search</button>
+            </section>
+        </div>
+     
+        <div class="gallery_lines">
+            <a target="_blank" href="p1.html">
+              <img src="F3living.jpg" alt="F3">
+             </a>
+             <div class="display2">
+             <div class="desc">
+                <h3>F-3 appartement type</h3>
+                <i><h4>maximum num of peaple are:4</h4></i>
+            </div>
+             <div class="display"><div class="rate">79%</div><div><h3>very good</h3></div></div>
+             <div class="desc"><i><h4> <span style="color : #6c757d";> for sale </span> </h4> </i> </div> </div>
+             <div class="display3"><div><del><i><ins><h4><sub>960M</sub></h4></ins></i></del></div><div><h3><em>890 M</em></h3></div></div>
+      </div>     
+          
+
+
+
+
+      <div class="gallery_lines">
+        <a target="_blank" href="p2.html">
+          <img src="F2living room.jpg" alt="F2">
+         </a>
+         <div class="display2">
+         <div class="desc">
+            <h3>F-2 appartement type</h3>
+            <i><h4>maximum num of peaple are:3</h4></i>
+        </div>
+         <div class="display"><div class="rate">82%</div><div><h3>one of the best</h3></div></div>
+         <div class="desc"><i><h4> <span style="color : #7d6c7a";> for rent </span> </h4> </i> </div> </div>
+         
+            <div class="display4"><em> <h5>for 6 days and  nights</h5></em></div>
+             <div class="display3"><em><sub><h3>1M</h3></sub></em></div>
+        
+  </div>  
+        
+
+
+
+  <div class="gallery_lines">
+    <a target="_blank" href="p3.html">
+      <img src="front side.jpg" alt="villa">
+     </a>
+     <div class="display2">
+     <div class="desc">
+        <h3>villa </h3>
+        <i><h4>maximum num of peaple are:10</h4></i>
+    </div>
+     <div class="display"><div class="rate">90%</div><div><h3>fabulous</h3></div></div>
+     <div class="desc"><i><h4> <span style="color : #7d6c7a";> for sale </span> </h4> </i> </div> </div>
+     <div class="display3"><div><del><i><ins><h4><sub>3.1B</sub></h4></ins></i></del></div><div><h3><em>2.4B</em></h3></div></div>
+     
+</div>  
+
+
+<div class="gallery_lines">
+    <a target="_blank" href="p4.html">
+      <img src="hotelbalcony.jpg" alt="houtel room">
+     </a>
+     <div class="display2">
+     <div class="desc">
+        <h3>hotel room</h3>
+        <i><h4>maximum num of peaple are:2</h4></i>
+    </div>
+     <div class="display"><div class="rate">74%</div><div><h3>one of the be</h3></div></div>
+     <div class="desc"><i><h4> <span style="color : #7d6c7a";> for rent </span> </h4> </i> </div> </div>
+     
+        <div class="display4"><em> <h5>one day one night</h5></em></div>
+         <div class="display3"><em><sub><h3>1.5M</h3></sub></em></div>
+    
+</div>  
+
+
+<!--the right part start here-->
+<div class="right-part">
+
+
+   <div class="blue">
+    <h2>Sort and Filter Results</h2>
+
+    <!-- Sorting Options -->
+    <div class="display">
+      <label for="sort"><h3>Sort by:</h3></label>
+      <select id="sort" name="sort" class="option-box" >
+        <option > </option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="rating-desc">Rating: High to Low</option>
+        <option value="bookings-desc">Most Booked</option>
+      </select>
+    </div>
+    
+   
+    <form id="filters">
+     <div><h3>Filters : </h3></div>
+       <div class="display">
+      <legend>type of accodation :</legend>
+      <select  class="option-box">
+        <option > </option>
+        <option value="villa">villa</option>
+        <option value="hotel room">hotel room</option>
+        <option value="f-2">studio</option>
+        <option value="f3">appartement</option>
+      </select>
+     </div>
+     
+    
+     
+        <div class="display">
+        <legend> <h3>Price Range:</h3></legend>
+         <select class="option-box"> <option > </option>
+          <option >1M</option>
+          <option >6M</option>
+        </select>
+          <div>,</div>
+          <select class="option-box"> 
+            <option > </option>
+            <option >1B</option>
+            <option >2.4B</option>
+          </select>
+      </div>
+      
+    
+      <br>
+    
+      <!-- Amenities -->
+      <fieldset >
+        <legend><h3>Amenities & Facilities:</h3></legend>
+        <label><input type="checkbox" name="amenities" value="parking"> Parking</label><br>
+        <label><input type="checkbox" name="amenities" value="wifi"> WiFi</label><br>
+        <label><input type="checkbox" name="amenities" value="ac"> Air Conditioning</label>
+      </fieldset>
+    
+      <br>
+    
+      <button type="submit" style="height: 30px; border-radius: 10px; color: rgb(0, 0, 0); " >Apply Filters</button>
+    
+    </form>
+   </div>
+   <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26136.93452853155!2d7.7163174!3d36.89924195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x127fa41c3e9dfd3b%3A0xd7cf3ae36deeb39d!2sAnnaba%2C%20Algeria!5e0!3m2!1sen!2sdz!4v1689422130657!5m2!1sen!2sdz"
+      width="100%" height="100%" style="border:0;" allowfullscreen>
+    </iframe>
+  </div>
+  <footer>
+    <div class="footer-sections">
+      <div class="inline">
+        <h4>About HomeAway</h4>
+       <p>Post a Listing<br>Trust & Safety<br>Partner Resources</p></div> 
+      
+      <div class="inline">
+        <h4>Company</h4>
+        <p>Who are we?<br>Contact us<br>Privacy policy</p></div>
+     
+       <div class="inline">
+        <h4>Meet our family</h4>
+       <p>Vrbo<br>Abritel.fr<br>FeWo-direkt.de</p></div>
+      
+    </div>
+  </footer>
+  </div>
+  <script src="filter.js"></script>
+</body>
+</html>

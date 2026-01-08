@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #bdd9f0;
+}
+
+.navbar-nav {
+  background-color: #ffffff;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 35px;
+}
+.user-icon {
+display: inline-block;
+width: 24px;
+height: 24px;
+background-color: #e0e0e0;
+border-radius: 50%;
+text-align: center;
+line-height: 24px;
+margin-left: 9px;
+}
+nav a {
+  background-color: #ffffff;
+  text-decoration: none;
+  color: #336993;
+  font-weight: bold;
+}
+
+.tittle {
+  padding-right: 600px;
+  color: #336993;
+  background-color: #ffffff;
+}
+
+.one {
+  padding-top: 10px;
+  background-color: #ffffff;
+  color: #336993;
+}
+
+footer {
+  margin-top: 10px;
+  background-color: #336993;
+  color: #eee;
+  padding: 15px 10px;
+  position: sticky;
+}
+
+footer h4 {
+  background-color: #336993;
+  color: #0f2434;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  background-color: #336993;
+}
+footer p{
+   background-color: #336993;
+}
+footer div {
+  background-color: #336993;
+}
+.inline {
+  background-color: #336993;
+  display: inline;
+}
+
+.display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.fram, .framP2 {
+  background-color: #bdd9f0;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.fram {
+  width: 100%;
+  max-width: 400px;
+}
+
+.framP2 {
+  width: 60%;
+}
+
+.profile, .contact {
+  background-color: #bdd9f0;
+  border: 2px solid #336993;
+  color: #0d263a;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: large;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.long_box, .file {
+  border: 2px solid #336993;
+  border-radius: 10px;
+  width: 100%;
+  height: 46px;
+  padding: 10px;
+  
+  margin-bottom: 10px;
+  font-size: large;
+  background-color: #ffffff;
+  color: #336993;
+}
+
+.form {
+  border: 2px solid #0d263a;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+div h3{
+    background-color: #ffffff;
+    color: #336993;
+    padding: 10px;
+    font-size: larger;
+}
+div button{
+  height: 25px;
+    margin: 9px;
+    width: 25%;
+    font-size: medium;
+    border-radius: 10px;
+    color: #000000;
+    background-color: #ffffff;
+    margin: 10px;
+    
+}
+div button:hover{
+    background-color: #bdd9f0;
+}
+div select{
+    height: 25px;
+    width: 70%;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    margin-left: 10px;
+}
+div option{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.chatBox{
+  padding: 10px;
+    height: 40%;
+    font-size: larger;
+    width: 80%;
+    color: #000000;
+    scrollbar-highlight-color: #faf9f9;
+    border: 2px solid #4e4e4e;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+
+.line {
+  width: 2px;
+  background-color: #0d263a;
+  margin: 0 20px;
+}
+
+.announcment {
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px solid #336993;
+  background-color: #bdd9f0;
+  border-radius: 10px;
+  color: #0d263a;
+}
+
+.short {
+  margin: 10px;
+  width: 10%;
+  border: 2px solid #333;
+  border-radius: 10px;
+  height: 35px;
+  padding: 5px;
+  background-color: #eee
+}
+
+.big {
+  width: 60%;
+  border: 2px solid #333;
+  border-radius: 10px;
+  height: 35px;
+  background-color: #eee;
+  padding: 5px;
+  margin: 10px;
+}
+
+.medium {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px;
+  
+}
+
+.medium button {
+  width: 35px;
+  height: 35px;
+  font-size: 16px;
+  border: 1px solid #0d263a;
+  border-radius: 5px;
+  background-color: #eee;
+  cursor: pointer;
+}
+.shortBLUE{
+  padding: 10px;
+   width: 10%;
+   margin: 10px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  height: 35px;
+   padding-left: 25px;
+  padding-top: 4px;
+  font-size: large;
+  background-color: #bdd9f0;
+}
+.bigBLUE{
+   width: 60%;
+  border: 2px solid #333;
+  border-radius: 10px;
+  height: 35px;
+  background-color: #bdd9f0;
+  padding: 5px;
+  margin: 10px;
+}
+.mediumBLUE{
+    width: 110px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  height: 35px;
+  background-color: #bdd9f0;
+  padding-left: 25px;
+  padding-top: 4px;
+  margin: 10px;
+}

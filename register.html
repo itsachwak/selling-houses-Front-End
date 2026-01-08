@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+   <header>
+        <nav>
+             <h3>  
+               <a  class="tittle">DZHouses</a>
+                 <a class="one" href="ad.html">add an ad</a>
+                  <a class="one" href="#">help</a>
+                  <a class="one" href="#">travels</a>
+                  <a class="one" href="register.html">LOG IN<span class="user-icon"> 👤</span></a>
+               
+            </h3>
+        </nav>
+    </header>
+ 
+    <form  action="register.html" method="POST">
+    <H2 class="subscription">subscription</H2>
+    <div class="display">
+        <label class="category"><input type="radio" name="category" value="tenant"> Tenant</label>
+        <label class="category"><input type="radio" name="category" value="owner"> Owner</label><br>
+   </div>
+   <br>
+   <div>
+    <div class="display"> <input type="text" placeholder="Name" class="box"><input type="text" placeholder="Family Name" class="box"></div>
+    <div class="display">
+        <H2  class="short-box">+213</H2><input type="tel" placeholder="Phone" class="phone">
+    </div>
+    <input type="email" placeholder="Email" class="long_box" required> <br>
+    <input type="password" placeholder="password" class="long_box"required ><br>
+    <div>
+    <input type="file" name="idPhoto" class="file"><br>
+    <input type="file" accept="image/*" class="file"><br>
+    <div class="display"><input type="email" placeholder="Email" class="phone" required> <input type="text" placeholder="Postal code" class="short-box" ></div>
+    <input type="text" placeholder="RIB" class="long_box" > <br>
+    </div>
+    <br>
+    <button id="subscribe">Subscribe</button>
+  </form> 
+</di>
+
+
+
+<script>
+
+  window.addEventListener("DOMContentLoaded", function () { // DOMContentLoaded   tkhalik t7et kelch fel saf7a sa7
+    
+   
+    const button = document.getElementById("subscribe");
+
+    button.addEventListener("click", function () {
+      const selected = document.querySelector('input[name="category"]:checked');// wana radio khayerna
+
+      if (!selected) {
+        alert("Please select Tenant or Owner.");//tkharej men foug
+        return;
+      }
+      if (selected.value === "tenant") {
+        window.location.href = "tanentPage.html";
+      } else if (selected.value === "owner") {
+        window.location.href = "ownerPage.html";
+        // widow.open("ownerPage.html")  hadi tbedel al page kamla
+      }
+    });
+  });
+</script>
+ <br>
+ <br>
+ <br>
+    <footer>
+      <div class="footer-sections">
+        <div class="inline">
+          <h4>About HomeAway</h4>
+         <p>Post a Listing<br>Trust & Safety<br>Partner Resources</p></div> 
+        
+        <div class="inline">
+          <h4>Company</h4>
+          <p>Who are we?<br>Contact us<br>Privacy policy</p></div>
+       
+         <div class="inline">
+          <h4>Meet our family</h4>
+         <p>Vrbo<br>Abritel.fr<br>FeWo-direkt.de</p></div>
+        
+      </div>
+    </footer>
+</body>
+</html>

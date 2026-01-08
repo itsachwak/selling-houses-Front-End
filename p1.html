@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F3 appartment</title>
+</head>
+<link rel="stylesheet" href="pages.css">
+
+
+<body>
+    <div class="gallery-container">
+        <div class="main-image">
+          <img id="mainDisplay" src="F3room 1.jpg" alt="Main Image">
+        </div>
+        <div class="thumbnails">
+          <img src="F3room 1.jpg" alt="main room" onclick="changeImage(this)">
+          <img src="F3room.jpg" alt="room" onclick="changeImage(this)">
+          <img src="F3living.jpg" alt="living room" onclick="changeImage(this)">
+          <img src="F3download.jpg" alt="kitchen" onclick="changeImage(this)">
+          <img src="F3balcony.jpg" alt="balcony" onclick="changeImage(this)">
+          <img src="F3bathroom.jpg" alt="bath" onclick="changeImage(this)">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+
+      <div class="display">
+        <div class="left">
+      
+          
+          <h2>zaafrania n30, Annaba (23000)</h2>
+          <br>
+          <br>
+          <h3><i>Description : </i>   </h3>
+          
+          <div>F3 for Sale in zaafrania,
+            this appartment is fully with suplies everything u need
+            ull find big beds ,kitchen bedroom needs , oven, stovetop, and microwave It includes a washer/dryer, a
+           separate , and entertainment options such as cable TV and internet ,everything ull need ull find in the neighborhoods
+           such as super market hospitle all tyle of schools (primart , middle,hight and even medecin college) and resturent
+           +garden and security 24/7 and elivater
+         </div>
+         <br>
+            <h2>Community Guidelines</h2>
+            
+            <ul class="text">
+              <li>respect the neighbors</li>
+             <li>Park without blocking others</li>
+             <li>don't throw things from your window</li>
+             <li>respect securityguard </li>
+              <li>don't allow your kids to play with elivatour</li>
+              <li>Keep pets under control.</li>
+              <li>Respect shared spaces.</li>
+            </ul>
+         
+        </div>
+             <div class="right">
+               <h4>
+                 <p> 🅿️Parking available ☑️</p>
+                 <p> 👮‍♂️security available☑️ </p>
+                 <p>🌳garden available☑️</p>
+                </h4>
+                <br>
+                <select name="review" >
+                  <option value="general">Click to see user reviews</option>
+                  <option value="good"> so good  46%</option>
+                  <option value="good"> the best  40%</option>
+                  <option value="good"> not bad  12%</option>
+                  <option value="good"> really bad  2%</option>
+              </select> 
+              <br>
+              <br>
+              <br>
+              <!--ani 7aba n7out al bookig ow ta7t chwi ba7da button-->
+              <div class="display"><div class="same-row" >book now!👉 </div><button class="book-btn" id="book">📩  booking</button></div>
+             </div>
+      </div> <!--the display div-->
+      <footer>
+        <div class="footer-sections">
+          <div class="inline">
+            <h4>About HomeAway</h4>
+           <p>Post a Listing<br>Trust & Safety<br>Partner Resources</p></div> 
+          
+          <div class="inline">
+            <h4>Company</h4>
+            <p>Who are we?<br>Contact us<br>Privacy policy</p></div>
+         
+           <div class="inline">
+            <h4>Meet our family</h4>
+           <p>Vrbo<br>Abritel.fr<br>FeWo-direkt.de</p></div>
+          
+        </div>
+      </footer>
+      <script>
+        document.getElementById("book").addEventListener("click", function() {
+          window.location.href = "book-f3.html"; 
+        });
+       </script>     
+       <script src="pages.js"></script>
+    
+    
+      <script src="pages.js"></script>
+</body>
+
+</html>

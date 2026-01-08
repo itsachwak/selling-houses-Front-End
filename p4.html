@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hottel room</title>
+</head>
+<link rel="stylesheet" href="pages.css">
+<body>
+  <div class="gallery-container">
+    <div class="main-image">
+      
+      <img id="mainDisplay" src="hotelbalcony.jpg" alt="Main Image">
+    </div>
+    <div class="thumbnails">
+      <img src="hotelbalcony.jpg" alt="hotel"  onclick="changeImage(this)">
+      <img src="hotelroom.jpg" alt="main room" onclick="changeImage(this)">
+      <img src="hotelbalcony.jpg" alt="balcony" onclick="changeImage(this)">
+      <img src="hotelhotel dinner.jpg" alt="hotel dinner" onclick="changeImage(this)">
+      <img src="hotelbath enter.jpg" alt="bathe entery" onclick="changeImage(this)">
+      <img src="hotelbathroom.jpg" alt="bath" onclick="changeImage(this)">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!--btn ta3 next we prev men java-->
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  
+
+
+  <div class="display">
+    <div class="left">
+  
+      
+      <h2> Route du Cap de Garde, Plage Refes Zahouane, 23000 Annaba</h2>
+      <br>
+      <br>
+      <h3><i>Description : </i>   </h3>
+      
+  
+      <div>This 4-star seaside hotel offers spacious rooms with air conditioning, TV, and 
+        Wi-Fi. Guests can enjoy amenities like an outdoor pool, gym, spa, and a top-floor 
+        restaurant with panoramic sea views. It's located about 15 minutes from downtown 
+        Annaba and 25 minutes from Rabah Bitat Airport.
+     </div>
+     <br>
+        <h2>Community Guidelines</h2>
+        <br>
+        <ul class="text">
+         <li>Keep noise low after 10 PM.</li>
+          <li>respect the neighbors</li>
+         <li>Park without blocking others</li>
+         <li>don't throw things from your window</li>
+         <li>do not put trash infrpnt the door</li>
+          <li>No commercial or short-term rentals.</li>
+          <li>Keep pets under control.</li>
+          <li>Respect shared spaces.</li>
+        </ul>
+     
+    </div>
+         <div class="right">
+           <h4>
+             <p> 🅿️Parking available ☑️</p>
+             <p> 👮‍♂️security available☑️ </p>
+             <p>❄️ AC available☑️</p>
+             <p> privat pool available☑️</p>
+            </h4>
+            
+            <select name="review" >
+              <option value="general">Click to see user reviews</option>
+              <option value="good"> so good  46%</option>
+              <option value="good"> the best  54%</option>
+              <option value="good"> not bad  10%</option>
+              <option value="good"> really bad  0%</option>
+          </select> 
+          <br>
+          <br>
+          <br>
+          <!--ani 7aba n7out al bookig ow ta7t chwi ba7da button-->
+          <div class="display"><div class="same-row" >book now!👉 </div><button class="book-btn" id="book">📩  booking</button></div>
+         </div>
+  </div> <!--the display div-->
+  <footer>
+    <div class="footer-sections">
+      <div class="inline">
+        <h4>About HomeAway</h4>
+       <p>Post a Listing<br>Trust & Safety<br>Partner Resources</p></div> 
+      
+      <div class="inline">
+        <h4>Company</h4>
+        <p>Who are we?<br>Contact us<br>Privacy policy</p></div>
+     
+       <div class="inline">
+        <h4>Meet our family</h4>
+       <p>Vrbo<br>Abritel.fr<br>FeWo-direkt.de</p></div>
+      
+    </div>
+  </footer>
+  <script>
+    document.getElementById("book").addEventListener("click", function() {
+      window.location.href = "book-hot.html"; 
+    });
+   </script>     
+   <script src="pages.js"></script>
+
+
+
+
+
+
+
+
+<script src="pages.js"></script>
+</body>
+</html>

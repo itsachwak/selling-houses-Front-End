@@ -1,0 +1,173 @@
+.gallery-container {
+    display: flex;
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .main-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .thumbnails {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+  }
+  
+  .thumbnails img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .thumbnails img:hover {
+    transform: scale(1.05);
+  }
+  
+
+  /* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 578px; 
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(188, 169, 169, 0.8);
+}
+
+
+.info {
+  flex: 2;
+  min-width: 300px;
+}
+
+.info h2 {
+  color: #0066cc;
+}
+
+.address, .owner {
+  font-style: italic;
+  margin: 5px 0;
+}
+
+.icons span {
+  display: inline-block;
+  margin-right: 15px;
+  background: #eee;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+
+
+.review-btn {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.right{
+  justify-content: flex-end;
+
+  margin-top: 14%;
+  margin-left: 400px;
+  width: 40%;
+}
+.left{
+ align-items: flex;
+ width: 40%;
+}
+h2{
+  margin-top: 9px;
+  margin-left: 80px;
+  color: rgb(134, 159, 194);
+}
+.display{
+  display: flex;
+  align-items: flex;
+  gap: 20px;
+}
+
+.text{
+  margin-left: 40px;
+  font-size: medium;
+}
+select{
+  height: 42px;
+  color:#0066cc;
+  background-color: #f0f0f0;
+  width: 210px;
+  font-size: medium;
+  border-radius: 8px;
+  border: 2px solid #6387ac;
+} 
+select:hover{
+  color: aliceblue;
+  background-color: #6387ac;
+}
+.book-btn {
+  color:#0066cc;
+  background-color: #f0f0f0;
+  height: 35px;
+  width: 100px;
+  border-radius: 7px;
+  border: 2px solid #6387ac;
+}
+.book-btn:hover{
+  color: aliceblue;
+  background-color: #6387ac;
+}
+
+.same-row{
+  padding-top: 7px;
+}
+footer {
+  margin-top: 6px;
+  background-color: #336993;
+  color: rgb(10, 11, 50);
+  padding: 15px 10px;
+  position: sticky;
+}
+footer h4{
+  color: #333;
+}
+.footer-sections {
+  background-color: #336993;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px;
+ color: #eee;
+}
+
+
+.inline{
+  display: inline;
+}

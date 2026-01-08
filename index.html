@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZ Houses</title>
+    <link rel="stylesheet" href="prj.css">
+</head>
+                 
+<!-- hada ykhali al user yekteb wech yhab = <input type="text" id="box" placeholder="search..." class="box"> -->
+
+<body>
+    <header>
+        <nav>
+             <h3>  
+               <div class="navbar-nav"> 
+                 <a  class="tittle">DZHouses</a>
+                 <a class="one" href="ad.html">add an ad</a>
+                  <a class="one" href="#">help</a>
+                  <a class="one" href="#">travels</a>
+                  <a class="one" href="register.html">LOG IN<span class="user-icon"> 👤</span></a> 
+               </div>
+            </h3>
+        </nav>
+    </header>
+
+   <div class="banner">
+     <img src="the houses.jpg" class="pic"> 
+       <section class="search-bar">
+          <div class="box">Location</div>
+         <div class="box">Dates</div>
+          <div class="box">People</div>
+          <button id="search-btn" >Search</button>
+        </section>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="p1.html">
+          <img src="F3living.jpg" alt="F3" width="600" height="400" >
+         </a>
+         <div class="desc"><i>F3-type cozy apartment: 2 rooms a living room, kitchen,
+             bathroom, and balcony</i></div>
+
+         <div class="display"><div class="rate">79%</div><div><h3>very good</h3></div></div>
+         <div class="desc2"><i><h4>for sale</h4></i></div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="p2.html">
+          <img src="F2living room.jpg" alt="F2" width="600" height="400">
+          
+        </a>
+        <div class="desc"> <i>F-2 type apartment : with a main room , kitchen ,medium  balcony and a  bathroom</i></div>
+        <div class="display"><div class="rate">82%</div><div><h3>one of the best</h3></div></div>
+        <div class="desc2"><i><h4>for rent</h4></i></div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="P3.html">
+          <img src="front side.jpg" alt="villa" width="600" height="400">
+        </a>
+        <div class="desc">a villa with everything u need and just makes your dreams cames true </div>
+        <div class="display"><div class="rate">90%</div><div><h3> fabulous</h3></div></div>
+        <div class="desc2"><i><h4>for sele</h4></i></div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="p4.html">
+          <img src="hotelbalcony.jpg" alt="hotel " width="600" height="300">
+        </a>
+        <div class="desc">sabri hotel room overlooking the beach and a wonderfull overlooking</div>
+        <div class="display"><div class="rate">79%</div><div><h3> so cool</h3></div></div>
+        <div class="desc2"><i><h4>for rent</h4></i></div>
+      </div>
+ 
+     <br>
+     <br>
+     <br>
+
+     <section class="benefits">
+      <div class="benefit-item">
+        <div class="benefit-emoji"> 🔒</div>
+        <h1><p>Privacy and Safety</p></h1>
+        <i>Feel comfortable and safe while enjoying your own privacy — with no limits </i>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-emoji">📸🌍</div>
+        <h1><p>Create your own story</p></h1>
+        <i>Create memories you won’t forget easily , meet new people, and discover traditions you’ll love. </i>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-emoji">🏡</div>
+        <h1><p>new houses</p></h1>
+        <i>new houses new beginnings, change your life by changing your house, better home better life </i>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-emoji">✨</div>
+        <h1><p>Much more than just a rental</p></h1>
+        <i>Experience comfort, style, and freedom all in one place</i>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="footer-sections">
+        <div class="inline">
+          <h4>About HomeAway</h4>
+         <p>Post a Listing<br>Trust & Safety<br>Partner Resources</p></div> 
+        
+        <div class="inline">
+          <h4>Company</h4>
+          <p>Who are we?<br>Contact us<br>Privacy policy</p></div>
+       
+         <div class="inline">
+          <h4>Meet our family</h4>
+         <p>Vrbo<br>Abritel.fr<br>FeWo-direkt.de</p></div>
+        
+      </div>
+    </footer>
+    
+</body>
+<script>
+  document.getElementById("search-btn").addEventListener("click", function() {
+    window.location.href = "search.html"; 
+  });
+ </script>
+</html>

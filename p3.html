@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>villa</title>
+</head>
+<link rel="stylesheet" href="pages.css">
+
+
+<body>
+    <div class="gallery-container">
+        <div class="main-image">
+          <img id="mainDisplay" src="front side.jpg" alt="Main Image">
+        </div>
+        <div class="thumbnails">
+          <img src="down.jpg" alt="open space" onclick="changeImage(this)">
+          <img src="dinner room.jpg" alt="dining area" onclick="changeImage(this)">
+          <img src="second living room.jpg" alt="living room" onclick="changeImage(this)">
+          <img src="main room.jpg" alt="main room" onclick="changeImage(this)">
+          <img src="room.jpg" alt="second room" onclick="changeImage(this)">
+          <img src="guest room.jpg" alt="guest room" onclick="changeImage(this)">
+          <img src="guest bathroom.jpg" alt="main room" onclick="changeImage(this)">
+          <img src="pool.jpg" alt="second room" onclick="changeImage(this)">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+     
+      <div class="display">
+        <div class="left">
+      
+          
+          <h2>Les Almadies, Annaba (23000)</h2>
+          <br>
+          <br>
+          <h3><i>Description : </i>   </h3>
+          <br>
+      
+          <div>Villa for Sale in Les Almadies, Annaba
+           This spacious two-story villa is located in the calm and upscale area of Les Almadies in Annaba. It is perfect for families or anyone looking for a comfortable and stylish home
+           The villa includes three bedrooms, one of which is a guest room. It has two living rooms—one on the ground floor and another on the upper floor. The ground floor features an open space that combines the living room, dining area, and kitchen, creating a bright and welcoming atmosphere
+           Outside, you will find a private swimming pool and a seating area, ideal for relaxing or hosting guests.
+           This home offers both comfort and elegance in one of the best neighborhoods in Annaba.
+           Let me know if you'd like to add the size, price, or any extra features.
+         </div>
+         <br>
+            <h2>Community Guidelines</h2>
+            <br>
+            <ul class="text">
+           <li>Keep noise low after 10 PM.</li>
+           <li>Maintain the house and garden.</li>
+           <li>Use the pool responsibly.</li>
+           <li>Park without blocking others.</li>
+           <li>Take out trash on time.</li>
+              <li>No commercial or short-term rentals.</li>
+              <li>Keep pets under control.</li>
+              <li>Respect shared spaces.</li>
+            </ul>
+         
+        </div>
+             <div class="right">
+               <h4>
+                 <p> 🅿️Parking available ☑️</p>
+                 
+                 <p>🚰 Water available ☑️</p>
+                
+                 <p>🔌Electricity available☑️</p>
+                </h4>
+                
+                <select name="review" >
+                  <option value="general">Click to see user reviews</option>
+                  <option value="good"> so good  46%</option>
+                  <option value="good"> the best  40%</option>
+                  <option value="good"> not bad  12%</option>
+                  <option value="good"> really bad  2%</option>
+              </select> 
+              <br>
+              <br>
+              <br>
+              <!--ani 7aba n7out al bookig ow ta7t chwi ba7da button-->
+              <div class="display"><div class="same-row" >book now!👉 </div><button class="book-btn" id="book">📩  booking</button></div>
+             </div>
+      </div> <!--the display div-->
+      <footer>
+        <div class="footer-sections">
+          <div class="inline">
+            <h4>About HomeAway</h4>
+           <p>Post a Listing<br>Trust & Safety<br>Partner Resources</p></div> 
+          
+          <div class="inline">
+            <h4>Company</h4>
+            <p>Who are we?<br>Contact us<br>Privacy policy</p></div>
+         
+           <div class="inline">
+            <h4>Meet our family</h4>
+           <p>Vrbo<br>Abritel.fr<br>FeWo-direkt.de</p></div>
+          
+        </div>
+      </footer>
+      <script>
+        document.getElementById("book").addEventListener("click", function() {
+          window.location.href = "book-villa.html"; 
+        });
+       </script>     
+       <script src="pages.js"></script>
+</body>
+
+</html>
